@@ -7,6 +7,7 @@ metadata:
     version: master
 data:
   config.yaml: |
+    istio_namespace: istio-system
     server:
       port: 20001
       web_root: /
@@ -15,3 +16,6 @@ data:
         url: "http://172.17.8.101:31888"
       grafana:
         url: "http://grafana.istio.jimmysong.io"
+    identity:
+      cert_file: /kiali-cert/cert-chain.pem
+      private_key_file: /kiali-cert/key.pem
