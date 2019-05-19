@@ -17,7 +17,7 @@ Vagrant.configure("2") do |config|
       ip = "172.17.8.#{i+100}"
       node.vm.network "private_network", ip: ip
       node.vm.provider "virtualbox" do |vb|
-        vb.memory = "3072"
+        vb.memory = "2048"
         vb.cpus = 1
         vb.name = "node#{i}"
       end

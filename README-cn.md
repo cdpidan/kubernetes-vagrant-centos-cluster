@@ -410,8 +410,7 @@ vagrant resume
 停机后重启启动。
 
 ```bash
-vagrant halt
-vagrant up
+vagrant reload
 # login to node1
 vagrant ssh node1
 # run the prosivision scripts
